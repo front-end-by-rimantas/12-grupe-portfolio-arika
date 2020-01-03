@@ -10,7 +10,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at https://front-end-by-rimantas.github.io/12-grupe-portfolio-arika/index.html
 
-Design: [arika template](http://inventheme.com/themeforest/arika/)
+Design: [arika template](http://adhyasoft.com/themeforest/arika/arika/index-01.html)
 
 ### Authors
 [Indrė](https://github.com/belauzas), [Neringa](https://github.com/belauzas), [Ramūnė](https://github.com/belauzas)
