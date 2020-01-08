@@ -1,1 +1,4 @@
-/* No CSS */
+.header {
+  background-color: gray;
+  height: 150px;
+}
