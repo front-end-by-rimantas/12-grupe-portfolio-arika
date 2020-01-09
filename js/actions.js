@@ -1,5 +1,5 @@
 "use strict";
-
+/* Indres script start*/
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
@@ -9,3 +9,17 @@ function myFunction() {
     document.getElementById("headeriux").className = "";
   }
 }
+
+/* Indres script end*/
+
+
+
+/* Ramunes script start*/
+
+/* Ramunes script end*/
+
+
+
+/* Neringos script start*/
+
+/* Neringos script end*/
