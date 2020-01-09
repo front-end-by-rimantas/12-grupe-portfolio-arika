@@ -2,10 +2,6 @@
   background-color: var(--primary-color);
 }
 
-.bg-secondary {
-  background-color: var(--secondary-color);
-}
-
 .bg-primary-light {
   background-color: var(--primary-light-color);
 }
@@ -16,4 +12,8 @@
 
 .bg-primary-red {
   background-color: var(--primary-red-color);
+}
+
+.bg-primary-blue {
+  background-color: var(--primary-blue-color);
 }
