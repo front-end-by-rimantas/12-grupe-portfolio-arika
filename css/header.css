@@ -19,37 +19,40 @@
   background-color: transparent;
   z-index: 1;
   border-bottom: solid 1px grey;
-  font-size: 20px;
-  line-height: 40px;
   top: 0;
   left: 0;
   right: 0;
   position: fixed;
   z-index: 1;
+  padding: 20px;
+  overflow: hidden;
 }
 
-.bum .arika {
+.arika {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
+  font-size: 24px;
+  line-height: 30px;
 }
 
-.bum .center {
+.center {
   text-decoration: none;
   text-align: center;
 }
 
-.bum .center a {
+.center a {
   text-decoration: none;
   margin-left: 40px;
   color: white;
   position: relative;
   font-size: 20px;
+  line-height: 30px;
   padding-bottom: 32px;
 }
 
-.bum .center a::after {
+.center a::after {
   display: inline-block;
   content: '';
   border-bottom: 3px solid white;
@@ -61,27 +64,26 @@
   position: absolute;
 }
 
-.bum .center a:hover::after {
+.center a:hover::after {
   right: 0%;
 }
 
-.bum .right {
+.right {
   text-align: center;
 }
 
-.bum .right a {
+.right a {
   border: solid 1px;
   border-radius: 5px;
-  padding: 10px;
+  padding: 8px;
   text-decoration: none;
   width: 30px;
   height: 30px;
   color: white;
   font-size: 12px;
-  margin-top: 10px;
 }
 
-.bum .right a:hover {
+.right a:hover {
   color: black;
   background-color: white;
   border-color: white;

@@ -3,25 +3,8 @@
   background-image: url(../img/background1.jpg);
   width: 100%;
   color: white;
-  height: 940px;
-}
-
-@media (max-width: 1100px) {
-  #hero #hero {
-    height: 300px;
-  }
-}
-
-@media (max-width: 900px) {
-  #hero #hero {
-    height: 100px;
-  }
-}
-
-@media (max-width: 600px) {
-  #hero #hero {
-    height: 1500px;
-  }
+  height: 935px;
+  overflow: hidden;
 }
 
 #hero .borderLeft {
@@ -51,8 +34,8 @@
 
 #hero .left h3 {
   display: inline-block;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 70px;
+  line-height: 80px;
   float: left;
 }
 

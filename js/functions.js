@@ -6,21 +6,11 @@ var string = "Developer"
 var str = string.split("");
 var el = document.getElementById('str');
 (function animate() { 
-str.length > 0 ? el.innerHTML += str.shift() : clearInterval(running); 
-var running = setInterval(animate,90);
+str.length > 0 ? el.innerHTML += str.shift() : setTimeout(running); 
+var running = setTimeout(animate, 100);
+
 })();
 
-window.setInterval(function() {
-    if (visible === true) {
-      con.className = 'cursor hidden'
-      visible = false;
-
-    } else {
-      con.className = 'cursor'
-
-      visible = true;
-    }
-  }, 400)
 
 
 

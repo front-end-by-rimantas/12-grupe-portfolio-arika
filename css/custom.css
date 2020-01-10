@@ -17,3 +17,7 @@
 .bg-primary-blue {
   background-color: var(--primary-blue-color);
 }
+
+.bg-primary-grey {
+  background-color: var(--primary-grey-color);
+}
