@@ -12,8 +12,8 @@
 .bum {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
   height: 68px;
   text-align: center;
   background-color: transparent;
@@ -28,28 +28,28 @@
   z-index: 1;
 }
 
-.arika {
+.bum .arika {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
 }
 
-.center {
+.bum .center {
   text-decoration: none;
   text-align: center;
 }
 
-.center a {
+.bum .center a {
   text-decoration: none;
   margin-left: 40px;
   color: white;
   position: relative;
-  font-size: 10px;
-  padding-bottom: 31px;
+  font-size: 20px;
+  padding-bottom: 32px;
 }
 
-.center a::after {
+.bum .center a::after {
   display: inline-block;
   content: '';
   border-bottom: 3px solid white;
@@ -61,74 +61,28 @@
   position: absolute;
 }
 
-.center a:hover::after {
+.bum .center a:hover::after {
   right: 0%;
 }
 
-.right {
+.bum .right {
   text-align: center;
 }
 
-.right a {
+.bum .right a {
   border: solid 1px;
   border-radius: 5px;
   padding: 10px;
   text-decoration: none;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   color: white;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-.right a:hover {
+.bum .right a:hover {
   color: black;
   background-color: white;
   border-color: white;
-}
-
-.hero {
-  display: inline-block;
-  background-image: url(../img/background1.jpg);
-  z-index: -1;
-  width: 100%;
-  height: 940px;
-}
-
-.hero > .container {
-  display: inline-block;
-  margin-top: 70px;
-  color: white;
-}
-
-.hero > .right {
-  margin-top: 200px;
-}
-
-.right h3 {
-  display: inline-block;
-  font-size: 50px;
-  float: left;
-}
-
-.right span {
-  display: inline-block;
-  font-size: 24px;
-  float: left;
-}
-
-.right button {
-  font-size: 16px;
-  color: white;
-  border: solid 1px red;
-  background-color: red;
-  border-radius: 5px;
-  padding: 15px;
-  text-transform: uppercase;
-  cursor: pointer;
-  float: left;
-}
-
-.right button:hover {
-  background-color: black;
-  -webkit-box-shadow: 0 4px 16px red;
-  box-shadow: 0 4px 16px red;
 }
