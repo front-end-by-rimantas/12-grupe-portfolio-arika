@@ -1,1 +1,36 @@
 
+.block {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 60px 20px;
+    border-radius: 4px;
+    box-shadow: o 4px 16px #0008;
+    text-align: center;
+    background-color: red($color: #000000);
+  }
+  .block > i {
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    line-height: 96px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+  }
+
+  > h2 {
+      display: inline-block;
+      width: 100%;
+      margin: 20px 0 10px;
+      font-size: 44px;
+      text-align: center;
+      line-height: 50px;
+      font-weight: bold;
+  }
+
+   > h3 {
+      display: inline-block;
+      width: 100%;
+      margin: 20px 0 10px;
+      font-size: 15px;
+      line-height: 25px;
+   }
