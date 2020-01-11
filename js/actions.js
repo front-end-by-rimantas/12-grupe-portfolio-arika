@@ -10,6 +10,8 @@ function myFunction() {
   }
 }
 
+renderGallery( works );
+
 
 
 /* Indres script end*/
