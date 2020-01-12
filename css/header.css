@@ -87,4 +87,32 @@
   color: black;
   background-color: white;
   border-color: white;
+  -webkit-animation: icons 0.7s ease-in-out;
+          animation: icons 0.7s ease-in-out;
+}
+
+@-webkit-keyframes icons {
+  from {
+    color: white;
+    background-color: #fff;
+    border: black solid 1px;
+  }
+  to {
+    color: black;
+    background-color: white;
+    border: white solid 1px;
+  }
+}
+
+@keyframes icons {
+  from {
+    color: white;
+    background-color: #fff;
+    border: black solid 1px;
+  }
+  to {
+    color: black;
+    background-color: white;
+    border: white solid 1px;
+  }
 }

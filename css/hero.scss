@@ -8,7 +8,7 @@
 
 .borderLeft{
     display: inline-block;
-    margin-top: 350px;
+    margin-top: 300px;
     border-left: solid 4px white;
     padding-left: 30px;
     
@@ -17,7 +17,7 @@
 
 @media (max-width: 1100px) {
     .borderLeft{
-margin-top: 0px;
+margin-top: 250px;
     }}
 
 
@@ -33,7 +33,7 @@ margin-top: 0px;
 
 .left h3{
     display: inline-block;
-    font-size: 70px;
+    font-size: 65px;
     line-height: 80px;
     float: left;
 }
@@ -44,13 +44,13 @@ margin-top: 0px;
 
 #text {
     display: inline-block;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 #str {
     display: inline-block;
     width: 50px;
-    font-size: 24px;
+    font-size: 22px;
     color: #fff;
     background-color: transparent;
     position: absolute;
@@ -62,10 +62,27 @@ margin-top: 0px;
   }
 
   .cursor {
-    display:inline-block;
+   display:inline-block;
    position:relative;
    font-size: 24px;
- }
+   animation: cursor 1s steps(1) infinite;
+   opacity: 1;
+
+  }
+
+ @keyframes cursor {
+    0% {
+        opacity: 1;
+      }
+    
+      50% {
+        opacity: 0
+      }
+    
+      100% {
+        opacity: 1;
+      }
+    }
 
 .left button{
     font-size: 14px;
@@ -78,18 +95,37 @@ margin-top: 0px;
     cursor: pointer;
     float: left;
     
+    
+
 }
 
 .left button:hover{
     background-color: black;
-    -webkit-box-shadow: 0 4px 16px red;
-    box-shadow: 0 4px 16px red;
+    border: solid 1px black;
+    box-shadow: 0px 5px 10px #EF4464;
+    animation: button 1s ease-in-out;
 }
-  #heroImg{
+
+@keyframes button {
+    from {background-color: #EF4464; 
+    border:#EF4464 solid 1px}
+    to {background-color: black;
+    border:black solid 1px}
+      }
+    
+ 
+
+#heroImg{
      display: inline-block;
      width: 100%;
+     
     
   }
+
+  @media (max-width: 1100px) {
+    #heroImg{
+margin-top: 40px;
+    }}
 
 }
 
