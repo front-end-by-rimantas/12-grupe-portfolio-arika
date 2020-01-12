@@ -7,15 +7,18 @@
 
 
 /* Ramunes script start*/
-function renderService( data ) {
+function renderServices( data ) {
     let HTML = '';
 
-    console.log(data);
+    for (let i=0; i<data.lenght; i++) {
+      const block = data[i];
+    
+    }
 
     HTML += `<div class="col-4 block">
-            <i class="fa fa-globe"></i>
-            <h2>frfedf</h2>   
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?</h3>    
+            <i class="fa fa-${block.icon}"></i>
+            <h2>${block.title}</h2>   
+            <p>${block.sentence}</p>    
           </div>`;
     document.querySelector('#services > .row').innerHTML = HTML;
     return;       

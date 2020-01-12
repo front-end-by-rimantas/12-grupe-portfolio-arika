@@ -15,7 +15,7 @@ function myFunction() {
 
 
 /* Ramunes script start*/
-
+renderServices( services );
 /* Ramunes script end*/
 
 

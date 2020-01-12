@@ -6,36 +6,36 @@
 
 
 /* Ramunes script start*/
-const service = [
+const services = [
     {
         icon: 'archive',
         title: 'Ramune',
-        text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel
+        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
     },
     {
         icon: 'archive',
         title: 'Ramune',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
     },
     {
         icon: 'archive',
         title: 'Ramune',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
     },
     {
         icon: 'archive',
         title: 'Ramune',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
     },
     {
         icon: 'archive',
         title: 'Ramune',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
     },
     {
         icon: 'archive',
         title: 'Ramune',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
     },
 ]
 /* Ramunes script end*/
