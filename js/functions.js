@@ -1,5 +1,5 @@
 "use strict";
-
+// HERO ANIMATION
 class TypeWriter {
     constructor(txtElement, words, wait = 1000) {
       this.txtElement = txtElement;
@@ -68,21 +68,21 @@ class TypeWriter {
   }
 
   
-
+//GALLERY SCRIPT
   
-function renderGallery( data ) {
+ function renderGallery( data ) {
     let HTML = '';
 
     
     for ( let i=0; i<data.length; i++ ) {
         const work = data[i];
         HTML += `<div class="gallery-item">
-                    <a href="./img/Gallery/${work.link}"><img src="./img/Gallery/${work.img}"></a>
-                     <div class="titles">
-                         <div class="plus">+</div>
+                        <a href="./img/Gallery/${work.link}" data-lightbox="mygallery"><img src="./img/Gallery/${work.img}"></a>
+                    <a href="./img/Gallery/${work.link}" data-lightbox="mygallery" class="titles">
+                        
                          <div class="titleName">${work.title}</div>
-                    </div>
-                </div>`;
+                   </a>
+                 </div>`;
        
     }
     
