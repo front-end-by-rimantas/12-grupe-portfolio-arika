@@ -11,10 +11,10 @@ text-align: center;
 
  h1::after{
      content: " ";
-     border: solid 2px #7ef6e7;
+     border: solid 2px var(--primary-blue-color);
      height: 20px;
      width:130px;
-     background-color:#7ef6e7;
+     background-color:var(--primary-blue-color);
      position: relative;
      display: block;
      float: right;
@@ -27,7 +27,7 @@ p{
     display: inline-block;
     font-size: 18px;
     line-height: 20px;
-    color:#828282;
+    color:var(--primary-grey-color);
     margin-top: 20px;
 }
 }
@@ -41,70 +41,127 @@ display: inline-block;
 }  
 
 
-.gallery-item {
-    display: inline-block;
-    width: calc(100% / 3 - 30px);
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    
-    
-    &.hide {
-        display: none;
-    }
-
-    
-        
-    img {
+    .gallery-item {
         display: inline-block;
-        width: 100%;
+        width: calc(100% / 3 - 30px);
+        overflow: hidden;
+        cursor: pointer;
         height: 350px;
         object-fit: cover;
+        position: relative;
 
-        
-    }
-
-    
-    .titles{
-        display: none;
-        text-align: center;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #828282;
-        opacity: 0.3;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    
-    .titleName {
-        display: inline-block;
-        width: 100%;
-        background-color: #EF4464;
-        color: white;
-        font-size: 18px;
-        line-height: 50px;
-        text-align: center;
-      
-       
-    }
-
-    .plus{
-        display: inline-block;
-        font-size: 50px;
-        color: white;
-        padding: 120px;
-    }
-
-    }
-
-    &:hover {
-        .titles {
-            display: flex;
+        &.hide {
+            display: none;
         }
+       
         
-}
-}}
+     
+           img{
+               display: inline-block;
+               width: 100%;
+               height: 350px;
+              
+           } 
 
+           .titles{
+            display:none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            animation: title 0.3s ease forwards;
+            flex-direction: column;
+            text-decoration: none;
+
+           }
+
+           @keyframes title {
+            from {background-color: none;}
+            to {background-color: rgba(17, 17, 17, 0.4);}
+           
+           }
+
+           .titles::after{
+            content: " ";
+            border: solid 0.5px white;
+            width:130px;
+            position: absolute;
+            display: block;
+            animation: line 0.4s linear forwards;
+            margin-left: 125px;
+                        
+             }
+             @keyframes line {
+                from {
+                  left:10%;
+                  width:0%;
+                }
+                to {
+                  left:5%;
+                  width:20%;
+                }
+              }
+
+              .titles::before{
+                content: " ";
+                border-left: solid 0.5px white;
+                position: absolute;
+                height: 100px;
+                width: 1px;
+                display: block;
+                animation: line 0.4s linear forwards;
+                margin-right: 160px;
+                margin-top: 125px;
+                animation: horizontalLine 0.4s linear forwards;
+                            
+                 }
+
+                 @keyframes horizontalLine {
+                    from {
+                      top:10%;
+                    height:0%;
+                    }
+                    to {
+                      top:5%;
+                      height:20%;
+                    }
+                  }
+
+              .titles::after{
+                content: " ";
+                border: solid 0.5px white;
+                position: absolute;
+                display: block;
+                animation: line 0.4s linear forwards;
+                margin-left: 125px;
+                            
+                 }
+           
+           .titleName{
+               display: inline-block;
+               color: white;
+               font-size: 18px;
+               line-height: 50px;
+               width: 100%;
+               text-align: center;
+               margin-top: 300px;
+               animation: titleName 0.3s ease forwards;
+              
+           }
+
+           @keyframes titleName {
+            from {background-color: none;}
+            to {background-color: var(--primary-red-color);}
+           }
+          
+
+&:hover {
+    .titles {
+        display: flex;
+    }
+
+}}}
