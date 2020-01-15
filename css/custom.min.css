@@ -1,9 +1,1 @@
-.bg-primary{background-color:var(--primary-color)}.bg-primary-light{background-color:var(--primary-light-color)}.bg-primary-dark{background-color:var(--primary-dark-color)}.bg-primary-red{background-color:var(--primary-red-color)}.bg-primary-blue{background-color:var(--primary-blue-color)}.bg-primary-grey{background-color:var(--primary-grey-color)}
-
-.linija {
-    background-image: linear-gradient(
-    0,
-    #7FF2E7 35%,
-    transparent 2%
-);
-}
+.bg-primary{background-color:var(--primary-color)}.bg-primary-light{background-color:var(--primary-light-color)}.bg-primary-dark{background-color:var(--primary-dark-color)}.bg-primary-red{background-color:var(--primary-red-color)}.bg-primary-blue{background-color:var(--primary-blue-color)}.bg-primary-grey{background-color:var(--primary-grey-color)}.center{text-align:center}.linija{background-image:-webkit-gradient(linear, left top, left bottom, from(0), color-stop(35%, var(--primary-grey-color)), color-stop(2%, transparent));background-image:linear-gradient(0, var(--primary-grey-color) 35%, transparent 2%)}
