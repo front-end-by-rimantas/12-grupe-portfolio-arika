@@ -54,6 +54,8 @@ display: inline-block;
             display: none;
         }
        
+        
+     
            img{
                display: inline-block;
                width: 100%;
@@ -154,8 +156,8 @@ display: inline-block;
            @keyframes titleName {
             from {background-color: none;}
             to {background-color: var(--primary-red-color);}
-           
            }
+          
 
 &:hover {
     .titles {
