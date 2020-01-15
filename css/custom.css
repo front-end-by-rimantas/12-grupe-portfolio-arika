@@ -21,3 +21,13 @@
 .bg-primary-grey {
   background-color: var(--primary-grey-color);
 }
+
+.center {
+  text-align: center;
+}
+
+.linija {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(35%, var(--primary-grey-color)), color-stop(2%, transparent));
+  background-image: linear-gradient(0, var(--primary-grey-color) 35%, transparent 2%);
+}
+/*# sourceMappingURL=custom.css.map */

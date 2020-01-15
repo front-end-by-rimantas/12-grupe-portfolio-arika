@@ -28,5 +28,6 @@ renderGallery( works );
 
 
 /* Neringos script start*/
+renderBlogs(info);
 
 /* Neringos script end*/
