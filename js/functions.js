@@ -121,9 +121,9 @@ function renderBlogs (data) {
       const blogiukai = data[i];
 
 HTML += `<div class= "blokai">
-          <div class = "photo">
+          <a href ="#" class = "photo">
               <img id = "foto" src="./img/Blog/${blogiukai.img}" alt="User photo">
-          </div>
+          </a>
           <p class="date">
               ${blogiukai.date.day}
               ${blogiukai.date.month}

@@ -52,6 +52,7 @@
   text-decoration: none;
   font-size: 22px;
   color: black;
+  cursor: pointer;
 }
 
 .textas > a:hover {
@@ -86,45 +87,52 @@
   border-bottom: 2px solid black;
 }
 
-@media (max-width: 1300px) {
+@media (max-width:1300px){
   .blokai {
-    width: 300px;
+   width: 300px;
   }
+ 
   #foto {
-    width: 300px;
+      width: 300px;
   }
 }
 
-@media (max-width: 1100px) {
-  .blokai {
-    width: 700px;
-    margin-left: calc(50% - 350px);
+  @media (max-width:1100px){
+      .blokai{
+          width: 700px;
+          margin-left: calc(50% - 350px)
+      }
+  
+      #foto {
+          width: 700px;
+          margin-left: calc(50% - 350px)
+      }
+   }
+ 
+  @media (max-width:900px){
+      .blokai {
+          width: 500px; 
+          margin-left: calc(50% - 250px)
+      }
+      
+      #foto {
+          width: 500px;
+          margin-left: calc(50% - 250px)
+      }
+  
   }
-  #foto {
-    width: 700px;
-    margin-left: calc(50% - 350px);
-  }
-}
 
-@media (max-width: 900px) {
-  .blokai {
-    width: 500px;
-    margin-left: calc(50% - 250px);
+  @media (max-width:700px){
+      .blokai {
+          width: 450px; 
+          margin-left: calc(50% - 225px)
+      }
+      
+      #foto {
+          width: 450px;
+          margin-left: calc(50% - 225px)
+      }
+  
   }
-  #foto {
-    width: 500px;
-    margin-left: calc(50% - 250px);
-  }
-}
 
-@media (max-width: 700px) {
-  .blokai {
-    width: 450px;
-    margin-left: calc(50% - 225px);
-  }
-  #foto {
-    width: 450px;
-    margin-left: calc(50% - 225px);
-  }
-}
 /*# sourceMappingURL=blocks.css.map */
