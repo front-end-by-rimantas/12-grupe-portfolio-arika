@@ -1,4 +1,37 @@
 "use strict";
+//HEADER script NAVIGATION
+function renderHeaderNav() {
+  const sections = document.querySelectorAll('[data-nav]');
+  let HTML = '';
+
+  for ( let i=0; i<sections.length; i++ ) {
+      const link = sections[i].id;
+      HTML += `<a class=animatedBorder  href="${link.indexOf('https://') === 0 ? '' : '#'}${link}">${sections[i].dataset.nav}</a>`
+      
+  }
+
+  return document.querySelector('#headerjs nav').innerHTML = HTML;
+}
+
+//HEADER script Mobile-MENU
+
+function headerActions() {
+  const hamburger = document.querySelector('#headerjs .responsive-menu');
+  const headerNav = document.querySelector('#headerjs .navigation');
+  const headerNavLinks = headerNav.querySelectorAll('.navigation a');
+
+  hamburger.addEventListener('click', () => {
+      headerNav.classList.toggle('mobile');
+  })
+
+  headerNavLinks.forEach( link => {
+      link.addEventListener('click', () => {
+          headerNav.classList.remove('mobile');
+      })
+  })
+}
+
+
 // HERO ANIMATION
 class TypeWriter {
     constructor(txtElement, words, wait = 1000) {

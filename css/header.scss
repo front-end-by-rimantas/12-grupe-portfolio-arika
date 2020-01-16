@@ -9,10 +9,8 @@
     text-align: center;
     padding: 10px;
     height: 68px;
-    
-
 }
-.bum{
+.content-header{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     height: 68px;
@@ -27,8 +25,12 @@
     z-index: 1;
     padding: 20px;
     overflow: hidden;
-
 }
+
+@media (max-width: 1300px) {
+    .content-header{
+    grid-template-columns: 1fr 5fr 1fr;
+}}
 
 .arika{
     color: white;
@@ -37,28 +39,26 @@
     position: relative;
     font-size: 24px;
     line-height: 30px;
-    
 }
 
-.center{
+.navigation{
     text-decoration: none;
     text-align: center;
 
-}
-
-
-        .center a{
+        a{
         text-decoration: none;
         margin-left: 40px;
         color: white;
-        position: relative;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 30px;
-        padding-bottom: 32px;
-        
+        padding-bottom: 22px;
         }
 
-        .center a::after{
+            .animatedBorder{
+                position: relative;
+            }
+
+        .animatedBorder:after{
             display: inline-block;
             content: '';
             border-bottom: 3px solid white;
@@ -67,18 +67,20 @@
             right: 100%;
             transition: all 500ms;
             position: absolute;
+           
              
         }
 
-        .center a:hover::after{
-        right:0%;
-        }
+        .animatedBorder:hover:after{
+        right:0;
+        }}
 
         .right{
             text-align: center;
             
      }
                 .right a{
+                    display: inline-block;
                     border: solid 1px;
                     border-radius: 5px;
                     padding: 8px;
@@ -87,9 +89,6 @@
                     height: 30px;
                     color: white;
                     font-size: 12px;
-                    
-                    
-                    
                 }
     
                 .right a:hover{
@@ -97,7 +96,6 @@
                     background-color: white;
                     border-color: white;
                     animation: icons 0.7s ease-in-out;
-                    
                 }
 
                 @keyframes icons {
@@ -107,6 +105,66 @@
                     to {color: black; background-color: white;
                     border:white solid 1px}
                       }
-            
-            
-        
+
+                      @media (max-width: 1100px) {
+                        .right a{
+                        float:right;
+                        margin-left: 3px;
+                       
+                    }}
+
+
+                      .responsive-menu{
+                        display: none;
+                        color: white;
+                        font-size: 24px;
+                        line-height: 35px;
+                        width: 35px;
+                        border: solid 1px blue;
+                        border-radius: 3px;
+                        background-color: var(--primary-red-color);
+                        float: right;
+                        cursor: pointer;
+                    }
+
+                    @media (max-width: 1100px) {
+                        #headerjs {
+                            .navigation {
+                                display: none;
+
+                               &.mobile{
+                                    display: inline-block;
+                                    position: fixed;
+                                    top: 70px;
+                                    width: 100%;
+                                    height: 286px;
+                                    background-color: #fff;
+                                   
+                                    a {
+                                        display: inline-block;
+                                        color: black;
+                                        width: 100%;
+                                        text-transform: uppercase;
+                                        border-bottom: solid var(--primary-grey-color) 1px;
+                                        font-size: 16px;
+                                        line-height: 20px;
+                                        text-align: left;
+                                        font-weight: bold;
+                                        padding:10px;
+                                        margin-left: 0;
+                                    }
+
+                                    .animatedBorder:after{
+                                        border-bottom: none;
+                                        
+                                    }
+    
+                               }}
+                            .responsive-menu{
+                                display: inline-block;
+                                margin-left: 15px;
+                            }
+                            }
+                    }
+                
+                                            
