@@ -102,4 +102,37 @@ const info = [
 
 ]
 
+//Skills
+
+
+
+const skills = [   
+    {
+    title: "HTML5",
+    value: 92,
+    minus: 8
+    },
+    
+    {
+    title: "WordPress",
+    value: 75,
+    minus: 25
+    
+    },
+    
+    {
+    title: "Magento ",
+    value: 86,
+    minus: 14
+    },
+    
+    {
+    title: "UI/UX ",
+    value: 88,
+    minus: 12
+    }
+    
+    ]
+    
+    
 /* Neringos script end*/
