@@ -31,6 +31,23 @@ function headerActions() {
   })
 }
 
+//Header DropDown Script
+
+function headerDrop() {
+const home = document.querySelector('#headerjs nav').firstChild;  //find "Home" in navigation bar
+const dropDown = document.createElement("dropDown");
+dropDown.text = `<div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              </div>`
+     console.log(dropDown.text);
+     
+     
+
+}
+
+
+
 
 // HERO ANIMATION
 class TypeWriter {
