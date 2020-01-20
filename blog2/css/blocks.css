@@ -1,0 +1,20 @@
+#Blogs{
+  display: inline-block;
+  width: calc (100%/3 - 30px);
+}
+
+  .foto {
+      display: inline-block;
+      width: (100% / 3 - 30px);
+      margin: 15px;
+  }
+
+
+#foto {
+  display: inline-block;
+  width: 350px;    
+
+}
+
+
+/*# sourceMappingURL=blocks.css.map */

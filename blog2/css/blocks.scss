@@ -1,0 +1,32 @@
+#Blogs{
+    display: inline-block;
+    width: calc (100%/3 - 30px);
+}
+
+
+.latest {
+    display: inline-block;
+    width: calc(100%/3 + 30px);
+    margin-left: -15px;
+}
+
+.foto {
+    display: inline-block;
+    width: (100% / 3 - 30px);
+    margin: 15px;
+}
+
+
+
+#foto {
+    display: inline-block;
+    width: 350px;
+    
+
+}
+
+
+h1{
+    text-align: center;
+
+}
