@@ -68,14 +68,14 @@
   border-bottom: 3px solid white;
   bottom: 0;
   left: 0;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
   position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navigation .animatedBorder:hover:after {
-  -webkit-animation: bord 1s ease-in-out forwards;
-          animation: bord 1s ease-in-out forwards;
+  -webkit-animation: bord 0.5s ease-in-out;
+          animation: bord 0.5s ease-in-out;
 }
 
 @-webkit-keyframes bord {
@@ -83,7 +83,7 @@
     right: 100%;
   }
   to {
-    right: 0;
+    right: 0%;
   }
 }
 
@@ -92,7 +92,7 @@
     right: 100%;
   }
   to {
-    right: 0;
+    right: 0%;
   }
 }
 
@@ -104,17 +104,16 @@
   color: black;
   margin-top: 50px;
   width: 200px;
-  height: 100px;
   margin-left: -46px;
   padding-top: 20px;
-  -webkit-transition: opacity ease-in-out 0.5s;
-  transition: opacity ease-in-out 0.5s;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .navigation a:hover .dropdown-content {
   opacity: 1;
-  -webkit-animation: margins 0.5s ease-in-out alternate;
-          animation: margins 0.5s ease-in-out alternate;
+  -webkit-animation: margins 0.5s;
+          animation: margins 0.5s;
 }
 
 @-webkit-keyframes margins {
@@ -136,6 +135,7 @@
 }
 
 .navigation .dropdown-content a {
+  display: inline-block;
   color: black;
   float: left;
   text-align: left;
@@ -143,6 +143,7 @@
   line-height: 20px;
   margin-left: 10px;
   font-weight: bold;
+  width: 100%;
 }
 
 .navigation .dropdown-content a:hover {

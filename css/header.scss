@@ -65,26 +65,25 @@
             border-bottom: 3px solid white;
             bottom: 0;
             left: 0;
-           
-            transition: all 500ms;
             position: absolute;
+            transition: all 0.5s;
         }
 
         .animatedBorder:hover:after{
-       
-        animation: bord 1s ease-in-out;
+            animation: bord 0.5s ease-in-out;
         }
+
         @keyframes bord{
             from{
                 right:100%;
             }
+
+            
             to{
-                right: 0;
+                right: 0%;
             }
 
         }
-
-        
             .dropdown-content {
                 display: inline-block;
                 opacity: 0;
@@ -93,14 +92,14 @@
                 color: black;
                 margin-top: 50px;
                 width:200px;
-                height: 100px;
+               
                 margin-left: -46px;
                 padding-top: 20px;
-                transition: opacity ease-in-out 0.5s;
+                transition: opacity 0.5s;
             }
               a:hover .dropdown-content {
                 opacity: 1;
-                animation: margins 0.5s ease-in-out alternate;
+                animation: margins 0.5s;
                 }
 
                 @keyframes margins {
@@ -114,6 +113,7 @@
 
                 
               .dropdown-content a {
+                  display: inline-block;
                   color: black;
                   float: left;
                   text-align: left;
@@ -121,6 +121,8 @@
                   line-height: 20px;
                   margin-left: 10px;
                   font-weight: bold;
+                  width: 100%;
+                  
                   
               }
 

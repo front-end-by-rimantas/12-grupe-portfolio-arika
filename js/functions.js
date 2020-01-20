@@ -37,12 +37,25 @@ function headerDrop() {
 const home = document.querySelector('#headerjs nav').firstChild;  //find "Home" in navigation bar
 
 home.innerHTML += `<div class="dropdown-content">
-              <a href="#">Home Option 1</a>
-              <a href="#">Home Option 2</a>
+              <a href="http://adhyasoft.com/themeforest/arika/arika/index.html">Home Option 1</a>
+              <a href="./">Home Option 2</a>
               </div>`;
 
 
 }
+
+function headerDropp() {
+  const pages = document.querySelector('#headerjs nav').lastChild;  //find "Home" in navigation bar
+  
+  pages.innerHTML += `<div class="dropdown-content">
+                <a href="#aboutMe">About Me</a>
+                <a href="#services">Services</a>
+                <a href="#latest-works">Portfolio</a>
+                <a href="#contacts">Contact</a>
+                </div>`;
+  
+  
+  }
 
 
 //function headerDrop2(){
