@@ -146,4 +146,43 @@ HTML += `<div class= "blokai">
 
   return document.querySelector('#Blogs > .row').innerHTML = HTML;
 }
+
+  //Skills
+
+function renderSkills( data ) {
+  let HTML = '';
+
+
+if ( !Array.isArray (data) ) {
+  return console.error('ERROR: negaliu sugeneruoti sekcijos, del blogo formato duomenu.');
+}
+
+if ( data.length === 0 ) {
+  return console.error('ERROR: negaliu sugeneruoti sekcijos del tuscio saraso.');
+}
+
+for ( let i=0; i<data.length; i++ ) {
+  
+  const skill = data[i];
+  console.log (skill)
+  HTML += `<div class="progress-bar">
+              <div class="texts">
+                  <div class="title">${skill.title}</div>
+                  <div class="value" style = "margin-right: ${skill.minus}%" >${skill.value}%</div>
+              </div>
+              <div class="bar">
+                  <div class="value" style="width: ${skill.value}%; ">
+                      <div class="loading"></div>
+                  </div>
+              </div>
+          </div>`;
+}
+
+document.querySelector('#skills_progress_bars').innerHTML = HTML;
+}
+
+
+/* Neringos script end*/
+
+
 /* Neringos script end*/
