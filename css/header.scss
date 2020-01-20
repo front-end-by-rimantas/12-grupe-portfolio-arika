@@ -24,7 +24,7 @@
     position: fixed;
     z-index: 1;
     padding: 20px;
-    overflow: hidden;
+   // overflow: hidden;
 }
 
 @media (max-width: 1300px) {
@@ -72,7 +72,31 @@
         .animatedBorder:hover:after{
         right:0;
         }
-    }
+
+        
+            .dropdown-content {
+                display:inline-block;
+                position: absolute;
+                background-color: #f9f9f9;
+                color: black;
+                z-index: 1;
+                margin-top: 50px;
+                width:150px;
+                height: 100px;
+                margin-left: 40px;
+              }
+
+              .dropdown-content a {
+                  color: black;
+                  width: 100%;
+                  float: left;
+                  text-align: left;
+              }
+                 }
+    
+
+
+
         .right{
             text-align: center;
             
