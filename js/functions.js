@@ -48,10 +48,10 @@ function headerDropp() {
   const pages = document.querySelector('#headerjs nav').lastChild;  //find "Home" in navigation bar
   
   pages.innerHTML += `<div class="dropdown-content">
-                <a href="#aboutMe">About Me</a>
-                <a href="#services">Services</a>
-                <a href="#latest-works">Portfolio</a>
-                <a href="#contacts">Contact</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/about.html">About Me</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/services.html">Services</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/portfolio.html">Portfolio</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/contact.html">Contact</a>
                 </div>`;
   
   
