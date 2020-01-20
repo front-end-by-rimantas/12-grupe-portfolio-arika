@@ -37,18 +37,20 @@ function headerDrop() {
 const home = document.querySelector('#headerjs nav').firstChild;  //find "Home" in navigation bar
 
 home.innerHTML += `<div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              </div>`
+              <a href="#">Home Option 1</a>
+              <a href="#">Home Option 2</a>
+              </div>`;
 
-     console.log(home.innerHTML);
-     
-     
 
 }
 
 
+//function headerDrop2(){
 
+  //const pages = document.querySelectorAll('#headerjs nav');
+ 
+  
+//}
 
 // HERO ANIMATION
 class TypeWriter {

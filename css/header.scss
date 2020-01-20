@@ -53,6 +53,7 @@
         font-size: 18px;
         line-height: 30px;
         padding-bottom: 22px;
+        position: relative;
         }
             .animatedBorder{
                 position: relative;
@@ -64,38 +65,70 @@
             border-bottom: 3px solid white;
             bottom: 0;
             left: 0;
-            right: 100%;
+           
             transition: all 500ms;
             position: absolute;
         }
 
         .animatedBorder:hover:after{
-        right:0;
+       
+        animation: bord 1s ease-in-out;
+        }
+        @keyframes bord{
+            from{
+                right:100%;
+            }
+            to{
+                right: 0;
+            }
+
         }
 
         
             .dropdown-content {
-                display:inline-block;
+                display: inline-block;
+                opacity: 0;
                 position: absolute;
                 background-color: #f9f9f9;
                 color: black;
-                z-index: 1;
                 margin-top: 50px;
-                width:150px;
+                width:200px;
                 height: 100px;
-                margin-left: 40px;
-              }
+                margin-left: -46px;
+                padding-top: 20px;
+                transition: opacity ease-in-out 0.5s;
+            }
+              a:hover .dropdown-content {
+                opacity: 1;
+                animation: margins 0.5s ease-in-out alternate;
+                }
 
+                @keyframes margins {
+                    from{
+                        margin-top: 60px;
+                    }
+                    to{
+                        margin-top: 50px;
+                    }
+                }
+
+                
               .dropdown-content a {
                   color: black;
-                  width: 100%;
                   float: left;
                   text-align: left;
+                  font-size: 17px;
+                  line-height: 20px;
+                  margin-left: 10px;
+                  font-weight: bold;
+                  
+              }
+
+              .dropdown-content a:hover{
+                  color:var(--primary-red-color);
               }
                  }
     
-
-
 
         .right{
             text-align: center;
