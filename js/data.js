@@ -8,36 +8,36 @@
 /* Ramunes script start*/
 const services = [
     {
-        icon: 'archive',
-        title: 'Ramune',
-        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        icon: 'desktop',
+        title: 'Search Optimization',
+        description: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.'
     },
     {
-        icon: 'archive',
-        title: 'Ramune',
-        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        icon: 'layers',
+        title: 'Logo & Identify',
+        description: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.'
     },
     {
-        icon: 'archive',
-        title: 'Ramune',
-        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        icon: 'hotairbaloon',
+        title: 'Graphics Design',
+        description: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.'
     },
     {
-        icon: 'archive',
-        title: 'Ramune',
-        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        icon: 'mobile',
+        title: 'Fully Responsive',
+        description: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.'
     },
     {
-        icon: 'archive',
-        title: 'Ramune',
-        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
+        icon: 'tools',
+        title: 'Advanced Options',
+        description: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.'
     },
     {
-        icon: 'archive',
-        title: 'Ramune',
-        sentence: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel?'
-    },
-]
+        icon: 'scissors',
+        title: 'Reasonable Pricing',
+        description: 'The9 is a graphically polished, interactive, easily customizable, highly modern, fast loading.'
+    }
+] 
 /* Ramunes script end*/
 
 

@@ -20,7 +20,15 @@
     background-color: var(--primary-blue-color);
 }
 
-
+.center {
+    text-align: center;
+    
+.linija {
+    background-image: linear-gradient(
+	0,
+	#7FF2E7 10%,
+	transparent 2%);
+}
 
 // header
 
@@ -39,7 +47,7 @@
 // job history
 
 // services
-
+    
 // testimonials
 
 // contact me
