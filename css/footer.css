@@ -9,7 +9,7 @@
 .ArikaContacts {
   display: inline-block;
   width: 100%;
-  padding: 10px;
+  padding-bottom: 30px;
   color: white;
   text-transform: uppercase;
   font-weight: bolder;
@@ -19,7 +19,7 @@
 
 .contactAdress div {
   display: inline-block;
-  padding: 10px;
+  padding-bottom: 10px;
   color: var(--primary-grey-color);
   width: 90%;
 }
@@ -27,14 +27,26 @@
 .contactAdress a {
   display: inline-block;
   padding-right: 10px;
+  padding-bottom: 15px;
   color: var(--primary-grey-color);
   text-decoration: none;
   -webkit-transition: .3s ease;
   transition: .3s ease;
+  width: 90%;
 }
 
-.contactAdress a:nth-child(2):hover {
+.hover {
+  display: inline-block;
+}
+
+.hover:hover {
   color: white;
+}
+
+.contactAdress .fa {
+  display: inline-block;
+  width: 10%;
+  padding-bottom: 10px;
 }
 
 .centerAbout {
@@ -46,6 +58,7 @@
   color: white;
   padding-bottom: 30px;
   padding-top: 10px;
+  padding-left: 10px;
   font-size: 25px;
   width: 100%;
   text-align: left;
@@ -54,6 +67,7 @@
 .centerAbout a {
   display: inline-block;
   padding: 10px;
+  padding-bottom: 10px;
   color: var(--primary-grey-color);
   width: 100%;
   text-decoration: none;
@@ -66,15 +80,28 @@
   color: white;
 }
 
+.centerAbout img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 3px;
+}
+
+@media (max-width: 600px) {
+  .centerAbout img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  display: inline-block;
   border-top: solid 1px var(--primary-grey-color);
-  margin-top: 0px;
+  background-color: var(--primary-dark-color);
+  padding-left: 150px;
   padding-top: 20px;
-  padding-left: 170px;
+  width: 100%;
   padding-bottom: 20px;
 }
 
@@ -87,7 +114,8 @@
 
 .footer .icons {
   display: inline-block;
-  margin-left: 400px;
+  float: right;
+  padding-right: 200px;
 }
 
 .footer .icons a {
