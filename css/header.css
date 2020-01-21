@@ -1,5 +1,5 @@
 .header {
-  background-color: #343a40;
+  background-color: var(--primary-dark-color);
   opacity: 0.9;
   width: 100%;
   position: fixed;
