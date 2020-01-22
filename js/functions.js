@@ -1,4 +1,70 @@
 "use strict";
+//HEADER script NAVIGATION
+function renderHeaderNav() {
+  const sections = document.querySelectorAll('[data-nav]');
+  let HTML = '';
+
+  for ( let i=0; i<sections.length; i++ ) {
+      const link = sections[i].id;
+      HTML += `<a class=animatedBorder  href="${link.indexOf('https://') === 0 ? '' : '#'}${link}">${sections[i].dataset.nav}</a>`
+      
+  }
+
+  return document.querySelector('#headerjs nav').innerHTML = HTML;
+}
+
+//HEADER script Mobile-MENU
+
+function headerActions() {
+  const hamburger = document.querySelector('#headerjs .responsive-menu');
+  const headerNav = document.querySelector('#headerjs .navigation');
+  const headerNavLinks = headerNav.querySelectorAll('.navigation a');
+
+  hamburger.addEventListener('click', () => {
+      headerNav.classList.toggle('mobile');
+  })
+
+  headerNavLinks.forEach( link => {
+      link.addEventListener('click', () => {
+          headerNav.classList.remove('mobile');
+      })
+  })
+}
+
+//Header DropDown Script
+
+function headerDrop() {
+const home = document.querySelector('#headerjs nav').firstChild;  //find "Home" in navigation bar
+
+home.innerHTML += `<div class="dropdown-content">
+              <a href="http://adhyasoft.com/themeforest/arika/arika/index.html">Home Option 1</a>
+              <a href="./">Home Option 2</a>
+              </div>`;
+
+
+}
+
+function headerDropp() {
+  const pages = document.querySelector('#headerjs nav').lastChild;  //find "Home" in navigation bar
+  
+  pages.innerHTML += `<div class="dropdown-content">
+                <a href="http://adhyasoft.com/themeforest/arika/arika/about.html">About Me</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/services.html">Services</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/portfolio.html">Portfolio</a>
+                <a href="http://adhyasoft.com/themeforest/arika/arika/contact.html">Contact</a>
+                </div>`;
+  
+  
+  }
+
+
+//function headerDrop2(){
+
+  //const pages = document.querySelectorAll('#headerjs nav');
+ 
+  
+//}
+
 // HERO ANIMATION
 class TypeWriter {
     constructor(txtElement, words, wait = 1000) {

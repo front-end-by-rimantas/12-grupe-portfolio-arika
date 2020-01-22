@@ -82,52 +82,30 @@
      demo -->
 
     <!-- header start -->
-    <div id="headeriux" class="header">
-      <div class="bum">
+    <div id="headerjs" class="header">
+      <div class="content-header">
             <div class="left">
                 <a href="#hero" class="arika">Arika</a>
             </div>
-            <div class="center">
-           
-                <a href="#hero" class="Home">Home</a>
-                <a href="#" class="About">About</a>
-                 <a href="#" class="Services">Services</a>
-                 <a href="#portfolio" class="Portfolio">Portfolio</a>
-                 <a href="#" class="Blog">Blog</a>
-                 <a href="#" class="Contact">Contact</a>
-                 <a href="#" class="Pages">Pages</a>
-           </div>
+            <div class="navigation">
+            <nav>
+             <!--<a href="#" class="Pages">Pages</a>-->
+           </nav>
+        </div>
            <div class="right">
-            <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-linkedin"></a>
-
-            
-    </div>
+            </div>
+            <div class="responsive-menu fa fa-bars"></div>
         </div>
        </div>
-        <!--    <div class="row">
-                <div class="col-2 m-r-1 bg-primary">
-                   <p> Arika</p>
-                </div>
-
-                <div class="col-6 m-r-1 bg-primary">
-                     Menu             
-                </div>   
-
-                <div class="col-2 bg-primary">        
-                     Icons  
-                </div>
-
-            </div>
-        </div> -->
-    
     <!-- header end -->
 
     <!-- hero start -->
    
-        <div id="hero" class="container">
+        <div class="container" data-nav="Home" id="hero" >
             <div class="row">
                 <div class="left col-5 col-lg-5 col-md-5 m-r-md-0 col-sm-12">
                    <div class="borderLeft"> 
@@ -151,7 +129,7 @@
     <!-- hero end -->
 
     <!-- About me start -->
-    <div class="aboutMe">
+    <div class="aboutMe" data-nav="About" id="aboutMe">
         <div class="container ">
             <div class="row">
                 <div class="col-5 col-lg-6 m-r-lg-0 col-md-12 col-sm-12 bg-primary">
@@ -172,7 +150,7 @@
     <!-- About me end -->
 
     <!-- Services start -->
-    <div class="services">
+    <div class="services" data-nav="Services" id="services">
         <div class="container  bg-primary-light">
             <div class="row">
                 <div class="col-8 m-l-2 m-r-2 col-md-12 m-l-md-0 m-r-md-0 bg-primary">
@@ -191,7 +169,7 @@
 
     <!-- gallery start -->
    
-        <div class="gallery container" id="latest-works">
+        <div class="gallery container" id="latest-works" data-nav="Portfolio">
             <div class="row works">
                 <div class="col-8 m-l-2 m-r-2 col-md-12 m-l-md-0 m-r-md-0">
                     <h1>Latest Works</h1>
@@ -230,7 +208,7 @@
 
    
     <!-- Testimonials start -->
-    <div class="testimonials">
+    <div class="testimonials" id="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-8 m-l-2 m-r-2 col-md-12 m-l-md-0 m-r-md-0 bg-primary">
@@ -248,7 +226,7 @@
     <!-- Testimonials end -->
 
    <!-- LatestBlogs start -->
-   <div class = "blogai">
+   <div class = "blogai" data-nav="Blogs" id="blogs">
     <div class="container bg-primary-light">
         <div class="row">
             <div class = "antraste col-8 m-l-2 m-r-2 col-md-12 m-l-md-0 m-r-md-0">
@@ -295,23 +273,54 @@
     <!-- GetInTouch end -->
 
         <!-- contact me start -->
-        <div class="container contact bg-primary-dark">
+        <div class="container contact bg-primary-dark" data-nav="Contacts" id="contacts">
             <div class="row">
-                <div class="col-3 col-sm-12 col-xs-12 bg-primary">Arika</div>
-                <div class="col-3 col-xs-12 bg-primary">About Us</div>
-                <div class="col-3 col-sm-6 col-xs-12 bg-primary">Other Links</div>
-                <div class="col-3 col-sm-12 col-xs-12 bg-primary">Instagram Feed</div>              
+                <div class="contactAdress col-3 col-sm-5 col-xs-12">
+                   <span class="ArikaContacts">Arika</span> 
+                  <a href="#" class="fa fa-map-marker"></a><div>301 The Greenhouse London, E2 8DY UK</div>
+                  <a href="#" class="fa fa-envelope"></a><a class="hover" href="#">support@domain.com</a>
+                  <a href="#" class="fa fa-phone"></a><a class="hover" href="#">820-885-3321</a>
+                </div>
+                <div class="centerAbout col-3 col-lg-2 col-sm-7 col-xs-6">
+                    <span>About Us</span> 
+                   <a href="#">Web Design</a>
+                   <a href="#">Development</a>
+                   <a href="#">Wordpress</a>
+                   <a href="#">Online Marketing</a>
+                   <a href="#">SEO Marketing</a>
+                   </div>
+                <div class="centerAbout col-3 col-sm-5 col-xs-6">
+                    <span>Other links</span> 
+                    <a href="#">Support Center</a>
+                    <a href="#">Customer Support</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Copyright</a>
+                    <a href="#">Popular Campaign</a>
+                </div>
+                <div class="centerAbout col-3 col-lg-4 col-sm-7 col-xs-12">
+                    <span>Instagram Feed</span> 
+                    <img src="./img/Gallery/img1.jpg" alt="img1">
+                    <img src="./img/Gallery/img2.jpg" alt="img2">
+                    <img src="./img/Gallery/img3.jpg" alt="img3">
+                    <img src="./img/Gallery/img4.jpg" alt="img4">
+                    <img src="./img/Gallery/img5.jpg" alt="img5">
+                    <img src="./img/Gallery/img6.jpg" alt="img6">
+                </div>              
                 </div>
             </div>
     <!-- contact me end -->
 
     <!-- footer start -->
     
-    <div class="container footer bg-primary-dark">
-        <div class="row">            
-            <div class="col-6 bg-primary">© 2019 copyright all right reserved</div>     
-            <div class="col-6 bg-primary">Icons</div>          
-       </div>
+    <div class="footer bg-primary-dark"  data-nav="Pages">
+            <div class="copyright">© 2019 copyright all right reserved</div>     
+            <div class="icons">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>         
+      
      </div>
   
     <!-- footer end -->
