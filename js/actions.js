@@ -40,4 +40,6 @@ renderGallery( works );
 /* Neringos script start*/
 renderBlogs(info);
 
+renderSkills( skills );
+
 /* Neringos script end*/
