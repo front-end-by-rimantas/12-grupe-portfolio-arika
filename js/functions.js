@@ -37,11 +37,11 @@ function renderServices( data ) {
            (block.description || (typeof(block.description) ==='string' && block.lenght > 0))
            ) {
             
-          HTML += `<div class="col-4 col-sm-12 block"> 
-                      <img src="./img/icons/${block.icon}.png">
+          HTML += `<div class="service col-4 col-sm-12 block"> 
+                      <img src="./img/icons/${block.icon}.png"></img>
                       <span>${block.title}</span>
                       <h4>${block.description}</h4>
-                  </div>`;
+                  </div>`
 
           createdBlocks++;
       }
