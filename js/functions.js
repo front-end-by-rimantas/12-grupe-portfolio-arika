@@ -13,6 +13,7 @@ function renderHeaderNav() {
   return document.querySelector('#headerjs nav').innerHTML = HTML;
 }
 
+
 //HEADER script Mobile-MENU
 
 function headerActions() {
@@ -41,10 +42,6 @@ home.innerHTML += `<div class="dropdown-content">
               <a href="./">Home Option 2</a>
               </div>`;
 
-
-}
-
-function headerDropp() {
   const pages = document.querySelector('#headerjs nav').lastChild;  //find "Home" in navigation bar
   
   pages.innerHTML += `<div class="dropdown-content">
@@ -54,16 +51,10 @@ function headerDropp() {
                 <a href="http://adhyasoft.com/themeforest/arika/arika/contact.html">Contact</a>
                 </div>`;
   
-  
   }
 
 
-//function headerDrop2(){
 
-  //const pages = document.querySelectorAll('#headerjs nav');
- 
-  
-//}
 
 // HERO ANIMATION
 class TypeWriter {
@@ -136,7 +127,7 @@ class TypeWriter {
   
 //GALLERY SCRIPT
   
- function renderGallery( data ) {
+ function renderGallery(data) {
     let HTML = '';
 
     
@@ -252,3 +243,4 @@ document.querySelector('#skills_progress_bars').innerHTML = HTML;
 
 
 /* Neringos script end*/
+

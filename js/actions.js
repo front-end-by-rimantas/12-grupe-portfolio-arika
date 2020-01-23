@@ -4,10 +4,12 @@
 //Header navigation
 
 renderHeaderNav();
+
 headerActions();
 headerDrop();
-headerDropp();
-//headerDrop2();
+
+
+
 
 //SCROLL HEADER
 
@@ -43,3 +45,4 @@ renderBlogs(info);
 renderSkills( skills );
 
 /* Neringos script end*/
+

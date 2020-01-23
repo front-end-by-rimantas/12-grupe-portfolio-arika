@@ -57,11 +57,16 @@
   display: inline-block;
   color: white;
   padding-bottom: 30px;
-  padding-top: 10px;
   padding-left: 10px;
   font-size: 25px;
   width: 100%;
   text-align: left;
+}
+
+@media (max-width: 900px) {
+  .centerAbout span {
+    padding-top: 15px;
+  }
 }
 
 .centerAbout a {
@@ -134,7 +139,6 @@
 }
 
 .footer .icons {
-  display: inline-block;
   float: right;
   padding-right: 200px;
 }
