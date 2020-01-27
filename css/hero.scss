@@ -32,7 +32,7 @@ margin-top: 0px;
         }}
 
 .left h3{
-    display: inline-block;
+   
     font-size: 65px;
     line-height: 80px;
     float: left;
@@ -135,3 +135,110 @@ margin-top: 40px;
    width: 100%;
    object-fit: contain;
     }
+
+    .aboutText{
+        display: inline-block;
+        margin-top: 120px;
+
+        h3{
+            color: black;
+            font-size: 34px;
+            padding-bottom: 20px;
+            width: 100%;
+            float: left;
+        }
+
+        .web{
+            width: 100%;
+            color: black;
+            font-size: 24px;
+            line-height: 28px;
+            padding-bottom: 20px;
+            float: left;
+        }
+        .web:after{
+            content:'';
+            border: solid 2px var(--primary-blue-color);
+            height: 5px;
+            width:132px;
+            background-color:var(--primary-blue-color);
+            position: absolute;
+            margin-left: -135px;
+            margin-top: 18px;
+            z-index: -1;
+             }
+
+        .text1{
+            color: var(--primary-grey-color);
+            padding-bottom: 20px;
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        .blue:after{
+            content:'';
+            border: solid 2px var(--primary-blue-color);
+            height: 3px;
+            width:351px;
+            background-color:var(--primary-blue-color);
+            position: absolute;
+            margin-left: 9px;
+            margin-top: -10px;
+            z-index: -1;
+             }
+
+             @media (max-width: 1300px) {
+                .blue:after{
+                    width:275px;
+                    margin-left: -240px;
+                    margin-top: -10px; 
+            
+                }}
+
+                @media (max-width: 1100px) {
+                    .blue:after{
+                        width:200px;
+                        margin-left: -85px;
+                        margin-top: -35px; 
+                
+                    }}
+
+             .blue:before{
+                content:'';
+                border: solid 2px var(--primary-blue-color);
+                height: 3px;
+                width:202px;
+                background-color:var(--primary-blue-color);
+                position: absolute;
+                margin-left:-200px;
+                margin-top: 40px;
+                z-index: -1;
+                 }
+
+                 
+             @media (max-width: 1300px) {
+                .blue:before{
+                    width: 170px;
+                    margin-left:-315px;
+                    margin-top: 40px;
+                }}
+
+                @media (max-width: 1100px) {
+                    .blue:before{
+                        width: 135px;
+                        margin-left:-45px;
+                        margin-top: 15px;
+                
+                    }}
+        .btn{
+            margin-right: 10px;
+            border: none;
+           
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .aboutText{
+            margin-top: 0px;
+    
+        }}
