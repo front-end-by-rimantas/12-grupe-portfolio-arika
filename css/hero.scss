@@ -203,6 +203,30 @@ margin-top: 40px;
                 
                     }}
 
+                    @media (max-width: 900px) {
+                        .blue:after{
+                            width:330px;
+                            margin-left: -295px;
+                            margin-top: -10px; 
+                        }}
+
+                        @media (max-width: 600px) {
+                            .blue:after{
+                                width:310px;
+                                margin-left: -192px;
+                                margin-top: -10px; 
+                        
+                            }}
+
+                            @media (max-width: 500px) {
+                                .blue:after{
+                                    width:240px;
+                                    margin-left: -200px;
+                                    margin-top: -10px; 
+                            
+                                }}
+    
+
              .blue:before{
                 content:'';
                 border: solid 2px var(--primary-blue-color);
@@ -228,8 +252,28 @@ margin-top: 40px;
                         width: 135px;
                         margin-left:-45px;
                         margin-top: 15px;
-                
                     }}
+
+                    @media (max-width: 900px) {
+                        .blue:before{
+                            width: 140px;
+                            margin-left:-315px;
+                            margin-top: 40px;
+                        }}
+
+                        @media (max-width: 600px) {
+                            .blue:before{
+                                width: 140px;
+                                margin-left:-250px;
+                                margin-top: 40px;
+                            }}
+
+                            @media (max-width: 500px) {
+                                .blue:before{
+                                    width: 210px;
+                                    margin-left:-312px;
+                                    margin-top: 40px;
+                                }}
         .btn{
             margin-right: 10px;
             border: none;

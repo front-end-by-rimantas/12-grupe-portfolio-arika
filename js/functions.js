@@ -149,6 +149,10 @@ class TypeWriter {
     return;
 }
 
+
+//HEADER animatedBorder script
+
+
 /* Indres script end*/
 
 
@@ -244,3 +248,15 @@ document.querySelector('#skills_progress_bars').innerHTML = HTML;
 
 /* Neringos script end*/
 
+
+renderBorder();
+function renderBorder(){
+const border = document.querySelector('.navigation');
+
+border.addEventListener('click', () => {
+  border.classList.add('animationStop');
+   
+})
+
+
+}
