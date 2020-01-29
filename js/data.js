@@ -135,4 +135,39 @@ const skills = [
     ]
     
     
+    const duomenys = [
+        { 
+            ikona: 'map-marker',
+            punktas: 'Address',
+            info: {
+                info1: '123 6th St. Melbourne',
+                info2: 'Fl 32904, USA'}
+        },
+    
+        { 
+            ikona: 'envelope-o',
+            punktas: 'Email',
+            info: {info1: 'info@yourdomain.com',
+                 info2: 'sale@yourdomain.com'}
+        
+        },
+    
+        { 
+            ikona: 'phone-square',
+            punktas: 'Phone',
+            info: {
+                info1: 'Mob: +01 000 000 000',
+                info2: 'Fax: +01 000 000 000'}
+    
+        },
+    
+        { 
+            ikona: 'clock-o',
+            punktas: 'Working Hr',
+            info: {
+                info1: 'Monday to Friday',
+                info2:'(9:00 to 18:00)'}
+        }
+    
+    ]
 /* Neringos script end*/

@@ -248,6 +248,54 @@ document.querySelector('#skills_progress_bars').innerHTML = HTML;
 }
 
 
+
+function renderTouch (data) {
+     
+  let HTML = '';
+
+
+  if ( !Array.isArray (data) ) {
+      return console.error('ERROR: negaliu sugeneruoti sekcijos, del blogo formato duomenu.');
+  }
+
+  if ( data.length === 0 ) {
+      return console.error('ERROR: negaliu sugeneruoti sekcijos del tuscio saraso.');
+  }
+  
+
+  for ( let i=0; i<data.length; i++ ) {
+
+      const kontaktai = data[i];
+
+          HTML +=  ` <div class = "col-3 col-lg-6 col-s-12 col-xs-12">
+
+
+                          <div class = "contact-item ">
+                              
+                              
+                                  <div class = "icone  ">
+                                      <i class="fa fa-${kontaktai.ikona}"></i>
+                                  </div>
+                                  <div class = "tekstas ">
+                                      <h3 class = "teksto-h"> ${kontaktai.punktas}</h3>
+                                      <div class = "teksto-p">
+                                          <p>${kontaktai.info.info1}</p
+                                          <p>${kontaktai.info.info2}<p>
+                                      </div>
+                                 </div>
+                            </div>
+                            
+                  </div>`           
+      }
+ 
+
+      
+
+  return document.querySelector('#rodikliai').innerHTML = HTML;
+}
+
+
+
 /* Neringos script end*/
 
 

@@ -1,1 +1,268 @@
 /* No CSS */
+.antrastis > h1 {
+    font-size: 50px;
+
+    
+}
+
+.antrastis > p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 15px;
+    color: #828282;
+}
+
+#remas p {
+    color: #828282;
+}
+
+
+#remas{
+    display: inline-block;
+    width: 100%;
+    border-color: #CED4DA;
+    border-style: solid;
+    border-width: 0.2px;
+    padding: 50px 55px;
+    cursor: pointer;
+    box-shadow: 2px 30px 50px rgba(45, 45, 45, 0.1);
+    margin-bottom: 60px;
+}
+    
+.virsus > h3 {
+    display: inline-block;
+    width: 100%;
+    font-size: 30px;
+
+}
+
+.virsus > p {
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  
+
+}
+
+
+form {
+    display: inline-block;
+    width: 100%;
+  
+}
+    form input {
+        display: inline-block;
+        width: calc(50% - 15px);
+        float: left;
+        font-size: 17px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        background-color: #E9ECEF;
+        border: 1.5px solid #CED4DA;
+    
+    }
+       
+        form input:nth-child(2) {
+            float: right;
+        }
+    form textarea {
+        display: inline-block;
+        width: 100%;
+        min-height: 150px;
+        max-height: 300px;
+        margin: 30 0px;
+        resize: vertical;
+        font-size: 17px;
+        line-height: 30px;
+        border-bottom: 1px solid #CCC;
+        background-color:  #E9ECEF;
+        border: 1.5px solid #CED4DA;
+        border-width: 1px;
+       
+    }
+
+    
+   
+    
+
+
+
+
+    #subuton{
+        display: inline-block;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: -5px;
+       
+     
+        
+    }
+
+
+    .saliamyg{
+        display: inline-block;
+        float: left;
+        font-size: 14px;
+        line-height: 24px;
+        width: 70%;
+       
+    }
+    
+    
+
+    .btn{
+        display: inline-block;
+        float: right;
+         font-size: 14px;
+    }
+
+    .contact-item{
+        width: 100%;
+        margin-bottom: 30px;
+
+       }
+
+
+    .tekstas{
+        display: inline-block;
+  
+    }
+
+    .teksto-h{
+        margin-bottom: 10px;
+        font-size: 20px;
+        
+    }
+
+     
+    .teksto-p{
+        font-size: 17px;
+        line-height: 25px;
+        color: grey;
+      
+    }
+       
+
+
+       
+        
+       
+
+       
+
+    .icone{
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 25px;
+        color: #eF4464;
+    
+        
+    }
+
+    i {
+        line-height: 60px;
+        width: 50px;
+        border: 1px solid #eF4464;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 20px;
+       
+    }
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    #remas {
+        padding: 50px 30px;
+      
+    }
+
+    .saliamyg{
+        display: inline-block;
+        float: left;
+        width: 60%;
+       
+    }
+
+}
+
+
+   
+
+
+
+
+    @media (max-width: 700px) {
+        .getInTouch {
+            width: 550px;
+            margin-left: calc(50%-550px);
+            margin-right: calc(50%-550px);
+        }
+
+
+        .subuton{
+
+
+        }
+
+        .saliamyg{
+            width: 100%;
+            float: left;
+
+        }
+
+        .mygtukas{
+            float: left;
+            margin-top: 10px;
+            margin-bottom: -20px;
+           
+        }
+
+     
+      
+        
+        .getInTouch{
+            margin: 0 20px;
+            }
+    
+        #remas {
+            margin: 30px 20px;
+            margin-bottom: 60px;
+        }
+       
+
+    }  
+
+
+    @media (max-width: 600px) {
+
+        .antrastis > p {
+          margin-bottom: -40px;
+        }
+
+        form input {
+        width: 100%;
+        }
+
+
+
+        .getInTouch {
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        
+    }
+
+       
+
+       
+    
