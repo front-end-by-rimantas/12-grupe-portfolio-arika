@@ -42,4 +42,5 @@ renderBlogs(info);
 
 renderSkills( skills );
 
+renderTouch(duomenys)
 /* Neringos script end*/
