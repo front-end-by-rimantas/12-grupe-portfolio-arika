@@ -42,7 +42,7 @@ home.innerHTML += `<div class="dropdown-content">
               <a href="./">Home Option 2</a>
               </div>`;
 
-  const pages = document.querySelector('#headerjs nav').lastChild;  //find "Home" in navigation bar
+  const pages = document.querySelector('#headerjs nav').lastChild;  //find "Pages" in navigation bar
   
   pages.innerHTML += `<div class="dropdown-content">
                 <a href="http://adhyasoft.com/themeforest/arika/arika/about.html">About Me</a>
