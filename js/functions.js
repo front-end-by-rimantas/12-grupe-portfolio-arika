@@ -37,8 +37,8 @@ function renderServices( data ) {
            (block.description || (typeof(block.description) ==='string' && block.lenght > 0))
            ) {
             
-          HTML += `<div class="service col-4 col-sm-12 block"> 
-                      <img src="./img/icons/${block.icon}.png"></img>
+          HTML += `<div class="service center col-4 col-sm-12 block"> 
+                      <i class=" ico fa fa-${block.icon}"aria-hidden="true"></i>
                       <span>${block.title}</span>
                       <h4>${block.description}</h4>
                   </div>`
